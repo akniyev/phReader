@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 final class TextGeometryViewer: UITextView {
     private let verticalOffset: CGFloat = 10
@@ -103,7 +104,7 @@ final class TextGeometryViewer: UITextView {
                             let label = UILabel()
                             label.font = UIFont.systemFont(ofSize: 12)
                             label.textColor = .blue
-                            label.text = "/\(transcription)/"
+                            label.text = transcription.first != "(" ? "/\(transcription)/" : "-"
                             self?.labels[i] = label
                             self?.addSubview(label)
                             label.snp.makeConstraints { make in
@@ -140,8 +141,28 @@ final class WordTranslator {
     static let shared = WordTranslator()
     private var dictionary = [String:String]()
 
+    private func loadTranscriptions() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+
+        let managedContext = appDelegate.persistentContainer.viewContext
+
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Transcription")
+
+        do {
+            transcriptions = try managedContext.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+    }
+
+    init() {
+        loadTranscriptions()
+    }
+
+    var transcriptions: [NSManagedObject] = []
+
     func transcribe(word: String, completion: @escaping (String?) -> Void) {
-        if let transcription = dictionary[word] {
+        if let transcription = loadPhonetic(forWord: word) {
             completion(transcription)
             return
         }
@@ -169,12 +190,40 @@ final class WordTranslator {
                 let transcription = String(result[range1.upperBound..<range2.lowerBound]).decodingUnicodeCharacters
                 completion(transcription)
                 self?.dictionary[word] = transcription
+                self?.save(word, transcription)
             } else {
                 completion(nil)
             }
         }
 
         task.resume()
+    }
+
+    private func save(_ word: String, _ phonetic: String) {
+        DispatchQueue.main.async { [unowned self] in
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+
+            let managedContext = appDelegate.persistentContainer.viewContext
+
+            let entity = NSEntityDescription.entity(forEntityName: "Transcription", in: managedContext)!
+
+            let transcription = NSManagedObject(entity: entity, insertInto: managedContext)
+
+            transcription.setValue(word, forKey: "name")
+            transcription.setValue(phonetic, forKey: "transcription")
+
+            do {
+                try managedContext.save()
+                transcriptions.append(transcription)
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
+        }
+    }
+
+    private func loadPhonetic(forWord word: String) -> String? {
+        guard let transcription = transcriptions.first(where: { $0.value(forKey: "name") as? String == word }) else  { return nil }
+        return transcription.value(forKey: "transcription") as? String
     }
 }
 

@@ -10,6 +10,9 @@
 		5E7609C469A26B5D6DAAB946 /* TextGeometryViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E76095AD86844C1DF40FFC1 /* TextGeometryViewer.swift */; };
 		9F8FCF7B2596830000C7B2E5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9FE91143258160DE0005D385 /* SnapKit */; };
 		9F8FCF7D2596835900C7B2E5 /* TextTranscriberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FCF7C2596835900C7B2E5 /* TextTranscriberViewController.swift */; };
+		9F8FCF832596994900C7B2E5 /* TranscriptionStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FCF812596994900C7B2E5 /* TranscriptionStore.xcdatamodeld */; };
+		9F8FCFAB25969B7C00C7B2E5 /* Transcription+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FCFAA25969B7C00C7B2E5 /* Transcription+CoreDataProperties.swift */; };
+		9F8FCFAC25969B7C00C7B2E5 /* Transcription+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FCFA925969B7C00C7B2E5 /* Transcription+CoreDataClass.swift */; };
 		9FE91129258158A00005D385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE91128258158A00005D385 /* AppDelegate.swift */; };
 		9FE9112D258158A00005D385 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9112C258158A00005D385 /* ViewController.swift */; };
 		9FE91132258158A00005D385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE91131258158A00005D385 /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 /* Begin PBXFileReference section */
 		5E76095AD86844C1DF40FFC1 /* TextGeometryViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextGeometryViewer.swift; sourceTree = "<group>"; };
 		9F8FCF7C2596835900C7B2E5 /* TextTranscriberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTranscriberViewController.swift; sourceTree = "<group>"; };
+		9F8FCF822596994900C7B2E5 /* TranscriptionStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TranscriptionStore.xcdatamodel; sourceTree = "<group>"; };
+		9F8FCFA925969B7C00C7B2E5 /* Transcription+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Transcription+CoreDataClass.swift"; path = "/Volumes/1Tb/projects/PhReader/PhReader/Transcription+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		9F8FCFAA25969B7C00C7B2E5 /* Transcription+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Transcription+CoreDataProperties.swift"; path = "/Volumes/1Tb/projects/PhReader/PhReader/Transcription+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		9FE91125258158A00005D385 /* PhReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE91128258158A00005D385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE9112C258158A00005D385 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +64,8 @@
 		9FE91127258158A00005D385 /* PhReader */ = {
 			isa = PBXGroup;
 			children = (
+				9F8FCFA925969B7C00C7B2E5 /* Transcription+CoreDataClass.swift */,
+				9F8FCFAA25969B7C00C7B2E5 /* Transcription+CoreDataProperties.swift */,
 				9FE91146258160ED0005D385 /* Components */,
 				9FE9114025815ECF0005D385 /* App */,
 				9FE9113F25815EB70005D385 /* Resources */,
@@ -65,6 +73,7 @@
 				9FE91133258158A00005D385 /* LaunchScreen.storyboard */,
 				9FE91136258158A00005D385 /* Info.plist */,
 				9F8FCF7C2596835900C7B2E5 /* TextTranscriberViewController.swift */,
+				9F8FCF812596994900C7B2E5 /* TranscriptionStore.xcdatamodeld */,
 			);
 			path = PhReader;
 			sourceTree = "<group>";
@@ -168,8 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F8FCF832596994900C7B2E5 /* TranscriptionStore.xcdatamodeld in Sources */,
 				9FE9112D258158A00005D385 /* ViewController.swift in Sources */,
+				9F8FCFAB25969B7C00C7B2E5 /* Transcription+CoreDataProperties.swift in Sources */,
 				9F8FCF7D2596835900C7B2E5 /* TextTranscriberViewController.swift in Sources */,
+				9F8FCFAC25969B7C00C7B2E5 /* Transcription+CoreDataClass.swift in Sources */,
 				9FE91129258158A00005D385 /* AppDelegate.swift in Sources */,
 				5E7609C469A26B5D6DAAB946 /* TextGeometryViewer.swift in Sources */,
 			);
@@ -384,6 +396,19 @@
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		9F8FCF812596994900C7B2E5 /* TranscriptionStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9F8FCF822596994900C7B2E5 /* TranscriptionStore.xcdatamodel */,
+			);
+			currentVersion = 9F8FCF822596994900C7B2E5 /* TranscriptionStore.xcdatamodel */;
+			path = TranscriptionStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9FE9111D258158A00005D385 /* Project object */;
 }

@@ -28,12 +28,12 @@ class ViewController: UIViewController {
         textView.snp.makeConstraints { make in
             make.edges.equalTo(view.snp.margins)
         }
+        textView.font = UIFont.systemFont(ofSize: 24)
     }
 
     @objc private func processTap() {
         let tvc = TextTranscriberViewController()
         tvc.text = textView.text
-        textView.font = UIFont.systemFont(ofSize: 24)
         navigationController?.pushViewController(tvc, animated: true)
     }
 }
