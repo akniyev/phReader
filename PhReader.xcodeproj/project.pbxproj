@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5E7609C469A26B5D6DAAB946 /* TextGeometryViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E76095AD86844C1DF40FFC1 /* TextGeometryViewer.swift */; };
+		9F8FCF7B2596830000C7B2E5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9FE91143258160DE0005D385 /* SnapKit */; };
+		9F8FCF7D2596835900C7B2E5 /* TextTranscriberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FCF7C2596835900C7B2E5 /* TextTranscriberViewController.swift */; };
 		9FE91129258158A00005D385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE91128258158A00005D385 /* AppDelegate.swift */; };
 		9FE9112D258158A00005D385 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9112C258158A00005D385 /* ViewController.swift */; };
 		9FE91132258158A00005D385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE91131258158A00005D385 /* Assets.xcassets */; };
@@ -16,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		5E76095AD86844C1DF40FFC1 /* TextGeometryViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextGeometryViewer.swift; sourceTree = "<group>"; };
+		9F8FCF7C2596835900C7B2E5 /* TextTranscriberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTranscriberViewController.swift; sourceTree = "<group>"; };
 		9FE91125258158A00005D385 /* PhReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE91128258158A00005D385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE9112C258158A00005D385 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F8FCF7B2596830000C7B2E5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +64,7 @@
 				9FE9112C258158A00005D385 /* ViewController.swift */,
 				9FE91133258158A00005D385 /* LaunchScreen.storyboard */,
 				9FE91136258158A00005D385 /* Info.plist */,
+				9F8FCF7C2596835900C7B2E5 /* TextTranscriberViewController.swift */,
 			);
 			path = PhReader;
 			sourceTree = "<group>";
@@ -105,7 +110,7 @@
 			);
 			name = PhReader;
 			packageProductDependencies = (
-				9FE91143258160DE0005D385,
+				9FE91143258160DE0005D385 /* SnapKit */,
 			);
 			productName = PhReader;
 			productReference = 9FE91125258158A00005D385 /* PhReader.app */;
@@ -135,7 +140,7 @@
 			);
 			mainGroup = 9FE9111C258158A00005D385;
 			packageReferences = (
-				9FE91142258160DE0005D385,
+				9FE91142258160DE0005D385 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 9FE91126258158A00005D385 /* Products */;
 			projectDirPath = "";
@@ -164,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FE9112D258158A00005D385 /* ViewController.swift in Sources */,
+				9F8FCF7D2596835900C7B2E5 /* TextTranscriberViewController.swift in Sources */,
 				9FE91129258158A00005D385 /* AppDelegate.swift in Sources */,
 				5E7609C469A26B5D6DAAB946 /* TextGeometryViewer.swift in Sources */,
 			);
@@ -361,7 +367,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9FE91142258160DE0005D385 = {
+		9FE91142258160DE0005D385 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -372,9 +378,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9FE91143258160DE0005D385 = {
+		9FE91143258160DE0005D385 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FE91142258160DE0005D385;
+			package = 9FE91142258160DE0005D385 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
