@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ClipboardTextViewerViewController.swift
 //  phReader
 //
 //  Created by Gasan Akniev on 09.12.2020.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
+class ClipboardTextViewerViewController: UIViewController {
     let textView = UITextView()
     lazy var viewButton = UIBarButtonItem(title: "To viewer...", style: .plain, target: self, action: #selector(processTap))
 

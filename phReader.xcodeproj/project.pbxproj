@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		5E7609C469A26B5D6DAAB946 /* TextGeometryViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E76095AD86844C1DF40FFC1 /* TextGeometryViewer.swift */; };
+		9F2299892597E09B00AFFD21 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2299882597E09B00AFFD21 /* MainMenuViewController.swift */; };
 		9F8FCF7D2596835900C7B2E5 /* TextTranscriberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FCF7C2596835900C7B2E5 /* TextTranscriberViewController.swift */; };
 		9FE91129258158A00005D385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE91128258158A00005D385 /* AppDelegate.swift */; };
-		9FE9112D258158A00005D385 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9112C258158A00005D385 /* ViewController.swift */; };
+		9FE9112D258158A00005D385 /* ClipboardTextViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9112C258158A00005D385 /* ClipboardTextViewerViewController.swift */; };
 		9FE91132258158A00005D385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE91131258158A00005D385 /* Assets.xcassets */; };
 		9FE91135258158A00005D385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE91133258158A00005D385 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E76095AD86844C1DF40FFC1 /* TextGeometryViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextGeometryViewer.swift; sourceTree = "<group>"; };
+		9F2299882597E09B00AFFD21 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		9F8FCF7C2596835900C7B2E5 /* TextTranscriberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTranscriberViewController.swift; sourceTree = "<group>"; };
 		9FE91125258158A00005D385 /* phReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE91128258158A00005D385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FE9112C258158A00005D385 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FE9112C258158A00005D385 /* ClipboardTextViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardTextViewerViewController.swift; sourceTree = "<group>"; };
 		9FE91131258158A00005D385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FE91134258158A00005D385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FE91136258158A00005D385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -59,7 +61,8 @@
 				9FE91146258160ED0005D385 /* Components */,
 				9FE9114025815ECF0005D385 /* App */,
 				9FE9113F25815EB70005D385 /* Resources */,
-				9FE9112C258158A00005D385 /* ViewController.swift */,
+				9FE9112C258158A00005D385 /* ClipboardTextViewerViewController.swift */,
+				9F2299882597E09B00AFFD21 /* MainMenuViewController.swift */,
 				9FE91133258158A00005D385 /* LaunchScreen.storyboard */,
 				9FE91136258158A00005D385 /* Info.plist */,
 				9F8FCF7C2596835900C7B2E5 /* TextTranscriberViewController.swift */,
@@ -166,7 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FE9112D258158A00005D385 /* ViewController.swift in Sources */,
+				9FE9112D258158A00005D385 /* ClipboardTextViewerViewController.swift in Sources */,
+				9F2299892597E09B00AFFD21 /* MainMenuViewController.swift in Sources */,
 				9F8FCF7D2596835900C7B2E5 /* TextTranscriberViewController.swift in Sources */,
 				9FE91129258158A00005D385 /* AppDelegate.swift in Sources */,
 				5E7609C469A26B5D6DAAB946 /* TextGeometryViewer.swift in Sources */,
