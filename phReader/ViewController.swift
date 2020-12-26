@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  PhReader
+//  phReader
 //
 //  Created by Gasan Akniev on 09.12.2020.
 //

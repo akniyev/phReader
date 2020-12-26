@@ -1,6 +1,6 @@
 //
 //  TextTranscriberViewController.swift
-//  PhReader
+//  phReader
 //
 //  Created by Gasan Akniev on 25.12.2020.
 //
