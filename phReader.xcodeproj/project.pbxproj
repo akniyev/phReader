@@ -25,7 +25,7 @@
 		9F8FCF822596994900C7B2E5 /* TranscriptionStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TranscriptionStore.xcdatamodel; sourceTree = "<group>"; };
 		9F8FCFA925969B7C00C7B2E5 /* Transcription+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Transcription+CoreDataClass.swift"; path = "/Volumes/1Tb/projects/PhReader/PhReader/Transcription+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		9F8FCFAA25969B7C00C7B2E5 /* Transcription+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Transcription+CoreDataProperties.swift"; path = "/Volumes/1Tb/projects/PhReader/PhReader/Transcription+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
-		9FE91125258158A00005D385 /* PhReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE91125258158A00005D385 /* phReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE91128258158A00005D385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE9112C258158A00005D385 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9FE91131258158A00005D385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,10 +45,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FB238DB25978A490063FA28 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9F8FCF812596994900C7B2E5 /* TranscriptionStore.xcdatamodeld */,
+				9F8FCFA925969B7C00C7B2E5 /* Transcription+CoreDataClass.swift */,
+				9F8FCFAA25969B7C00C7B2E5 /* Transcription+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		9FE9111C258158A00005D385 = {
 			isa = PBXGroup;
 			children = (
-				9FE91127258158A00005D385 /* PhReader */,
+				9FE91127258158A00005D385 /* phReader */,
 				9FE91126258158A00005D385 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,16 +66,15 @@
 		9FE91126258158A00005D385 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9FE91125258158A00005D385 /* PhReader.app */,
+				9FE91125258158A00005D385 /* phReader.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9FE91127258158A00005D385 /* PhReader */ = {
+		9FE91127258158A00005D385 /* phReader */ = {
 			isa = PBXGroup;
 			children = (
-				9F8FCFA925969B7C00C7B2E5 /* Transcription+CoreDataClass.swift */,
-				9F8FCFAA25969B7C00C7B2E5 /* Transcription+CoreDataProperties.swift */,
+				9FB238DB25978A490063FA28 /* CoreData */,
 				9FE91146258160ED0005D385 /* Components */,
 				9FE9114025815ECF0005D385 /* App */,
 				9FE9113F25815EB70005D385 /* Resources */,
@@ -73,9 +82,8 @@
 				9FE91133258158A00005D385 /* LaunchScreen.storyboard */,
 				9FE91136258158A00005D385 /* Info.plist */,
 				9F8FCF7C2596835900C7B2E5 /* TextTranscriberViewController.swift */,
-				9F8FCF812596994900C7B2E5 /* TranscriptionStore.xcdatamodeld */,
 			);
-			path = PhReader;
+			path = phReader;
 			sourceTree = "<group>";
 		};
 		9FE9113F25815EB70005D385 /* Resources */ = {
@@ -105,9 +113,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9FE91124258158A00005D385 /* PhReader */ = {
+		9FE91124258158A00005D385 /* phReader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FE91139258158A00005D385 /* Build configuration list for PBXNativeTarget "PhReader" */;
+			buildConfigurationList = 9FE91139258158A00005D385 /* Build configuration list for PBXNativeTarget "phReader" */;
 			buildPhases = (
 				9FE91121258158A00005D385 /* Sources */,
 				9FE91122258158A00005D385 /* Frameworks */,
@@ -117,12 +125,12 @@
 			);
 			dependencies = (
 			);
-			name = PhReader;
+			name = phReader;
 			packageProductDependencies = (
 				9FE91143258160DE0005D385 /* SnapKit */,
 			);
 			productName = PhReader;
-			productReference = 9FE91125258158A00005D385 /* PhReader.app */;
+			productReference = 9FE91125258158A00005D385 /* phReader.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,7 +147,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9FE91120258158A00005D385 /* Build configuration list for PBXProject "PhReader" */;
+			buildConfigurationList = 9FE91120258158A00005D385 /* Build configuration list for PBXProject "phReader" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -155,7 +163,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9FE91124258158A00005D385 /* PhReader */,
+				9FE91124258158A00005D385 /* phReader */,
 			);
 		};
 /* End PBXProject section */
@@ -329,7 +337,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.akniev.PhReader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akniev.phReaderiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,7 +356,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.akniev.PhReader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akniev.phReaderiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,7 +366,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9FE91120258158A00005D385 /* Build configuration list for PBXProject "PhReader" */ = {
+		9FE91120258158A00005D385 /* Build configuration list for PBXProject "phReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FE91137258158A00005D385 /* Debug */,
@@ -367,7 +375,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FE91139258158A00005D385 /* Build configuration list for PBXNativeTarget "PhReader" */ = {
+		9FE91139258158A00005D385 /* Build configuration list for PBXNativeTarget "phReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FE9113A258158A00005D385 /* Debug */,

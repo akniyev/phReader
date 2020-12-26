@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:PhReader.xcodeproj">
+      location = "group:/Volumes/1Tb/projects/PhReader/phReader.xcodeproj">
    </FileRef>
 </Workspace>
